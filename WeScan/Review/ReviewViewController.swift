@@ -9,7 +9,7 @@
 import UIKit
 
 /// The `ReviewViewController` offers an interface to review the image after it has been cropped and deskwed according to the passed in quadrilateral.
-final class ReviewViewController: UIViewController {
+final class ReviewViewController: UIViewController, SettingsUI {
     
     private var rotationAngle = Measurement<UnitAngle>(value: 0, unit: .degrees)
     private var enhancedImageIsAvailable = false
@@ -76,7 +76,7 @@ final class ReviewViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // We only show the toolbar (with the enhance button) if the enhanced image is available.
-        if enhancedImageIsAvailable {
+        if showToolbar {
             navigationController?.setToolbarHidden(false, animated: true)
         }
     }
@@ -99,7 +99,18 @@ final class ReviewViewController: UIViewController {
         
         let fixedSpace = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        toolbarItems = [fixedSpace, enhanceButton, flexibleSpace, rotateButton, fixedSpace]
+        
+        toolbarItems = [flexibleSpace]
+        
+        if settingsManager.settings.enhanceButton.isOn {
+           toolbarItems?.insert(fixedSpace, at: 0)
+           toolbarItems?.insert(enhanceButton, at: 1)
+        }
+        
+        if settingsManager.settings.rotateButton.isOn {
+            toolbarItems?.append(rotateButton)
+            toolbarItems?.append(fixedSpace)
+        }
     }
     
     private func setupConstraints() {
@@ -155,4 +166,11 @@ final class ReviewViewController: UIViewController {
         imageScannerController.imageScannerDelegate?.imageScannerController(imageScannerController, didFinishScanningWithResults: newResults)
     }
 
+    private var showToolbar: Bool {
+        return enhancedImageIsAvailable
+            && (
+                settingsManager.settings.enhanceButton.isOn
+                    || settingsManager.settings.rotateButton.isOn
+                )
+    }
 }

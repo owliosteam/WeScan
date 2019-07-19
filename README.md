@@ -1,5 +1,5 @@
 # WeScan
- 
+
 <p align="center">
     <img width="900px" src="Assets/WeScan-Banner.jpg">
 </p>
@@ -12,18 +12,26 @@
 <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"/>
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat"/>
 </p>
- 
-**WeScan** makes it easy to add scanning functionalities to your iOS app! 
+
+**WeScan** makes it easy to add scanning functionalities to your iOS app!
 It's modelled after `UIImagePickerController`, which makes it a breeze to use.
 
-- [Features](#features)
-- [Example](#example)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Communication](#communication)
-- [License](#license)
+- [WeScan](#WeScan)
+  - [Features](#Features)
+  - [Demo](#Demo)
+  - [Requirements](#Requirements)
+  - [Installation](#Installation)
+    - [Cocoapods](#Cocoapods)
+    - [Carthage](#Carthage)
+    - [Manually](#Manually)
+  - [Usage](#Usage)
+    - [Swift](#Swift)
+    - [Objective-C](#Objective-C)
+      - [Example Implementation](#Example-Implementation)
+  - [Settings](#Settings)
+      - [Example Implementation in Swift](#Example-Implementation-in-Swift)
+  - [Contributing](#Contributing)
+  - [License](#License)
 
 ## Features
 
@@ -152,6 +160,24 @@ present(scannerViewController, animated: true)
 ```objc
 ImageScannerController *scannerViewController = [[ImageScannerController alloc] init];
 [self presentViewController:scannerViewController animated:YES completion:nil];
+```
+
+## Settings
+
+A `WeScan.Settings` object can be passed to the `settings` property on `ImageScannerController` with these optional settings:
+- **enhanceButton** (default `.on`): Show button to ehance the image on capture review
+- **rotateButton** (default `.on`): Show button to rotate the image on capture review
+- **captureMode** (default `.automatic`): Set the default capture mode for scanning a document
+
+#### Example Implementation in Swift
+
+```swift
+let scannerViewController = ImageScannerController()
+scannerViewController.settings = WeScan.Settings(
+    ehanceButton: .off,
+    rotateButton: .on,
+    captureMode: .manual
+)
 ```
 
 <br>

@@ -40,10 +40,16 @@ public protocol ImageScannerControllerDelegate: NSObjectProtocol {
 /// 1. Uses the camera to capture an image with a rectangle that has been detected.
 /// 2. Edit the detected rectangle.
 /// 3. Review the cropped down version of the rectangle.
-public final class ImageScannerController: UINavigationController {
+public final class ImageScannerController: UINavigationController, SettingsUI {
     
     /// The object that acts as the delegate of the `ImageScannerController`.
     weak public var imageScannerDelegate: ImageScannerControllerDelegate?
+    
+    public var settings: WeScan.Settings = WeScan.Settings() {
+        didSet {
+            settingsManager.add(settings: settings)
+        }
+    }
     
     // MARK: - Life Cycle
     
