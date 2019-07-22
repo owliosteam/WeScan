@@ -1,0 +1,6 @@
+framework module Pods_WeScan {
+  umbrella header "Pods-WeScan-umbrella.h"
+
+  export *
+  module * { export * }
+}

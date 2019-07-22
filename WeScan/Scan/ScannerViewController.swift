@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import Photos
+import Pickle
 
 /// The `ScannerViewController` offers an interface to give feedback to the user regarding quadrilaterals that are detected. It also gives the user the opportunity to capture an image with a detected rectangle.
 final class ScannerViewController: UIViewController, SettingsUI {
@@ -61,15 +63,25 @@ final class ScannerViewController: UIViewController, SettingsUI {
         return button
     }()
     
+    lazy private var photoLibraryButton: UIButton = {
+        let title = NSLocalizedString("wescan.scanning.photos", tableName: nil, bundle: Bundle(for: ScannerViewController.self), value: "Photos", comment: "The photos button title")
+
+        let button = UIButton()
+        button.setTitle(title, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(chooseFromPhotoLibrary), for: .touchUpInside)
+        return button
+    }()
+    
     lazy private var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.hidesWhenStopped = true
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         return activityIndicator
     }()
-
+    
     // MARK: - Life Cycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -95,7 +107,7 @@ final class ScannerViewController: UIViewController, SettingsUI {
         quadView.removeQuadrilateral()
         captureSessionManager?.start()
         UIApplication.shared.isIdleTimerDisabled = true
-
+        
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.addSubview(visualEffectView)
@@ -146,6 +158,10 @@ final class ScannerViewController: UIViewController, SettingsUI {
         view.addSubview(cancelButton)
         view.addSubview(shutterButton)
         view.addSubview(activityIndicator)
+        
+        if settingsManager.settings.photoLibrary.isOn {
+            view.addSubview(photoLibraryButton)
+        }
     }
     
     private func setupNavigationBar() {
@@ -162,6 +178,7 @@ final class ScannerViewController: UIViewController, SettingsUI {
     private func setupConstraints() {
         var quadViewConstraints = [NSLayoutConstraint]()
         var cancelButtonConstraints = [NSLayoutConstraint]()
+        var photoLibraryButtonConstraints = [NSLayoutConstraint]()
         var shutterButtonConstraints = [NSLayoutConstraint]()
         var activityIndicatorConstraints = [NSLayoutConstraint]()
         
@@ -189,6 +206,13 @@ final class ScannerViewController: UIViewController, SettingsUI {
                 view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: cancelButton.bottomAnchor, constant: (65.0 / 2) - 10.0)
             ]
             
+            if settingsManager.settings.photoLibrary.isOn {
+                photoLibraryButtonConstraints = [
+                    photoLibraryButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -24.0),
+                    photoLibraryButton.bottomAnchor.constraint(equalTo: cancelButton.safeAreaLayoutGuide.bottomAnchor)
+                ]
+            }
+            
             let shutterButtonBottomConstraint = view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: shutterButton.bottomAnchor, constant: 8.0)
             shutterButtonConstraints.append(shutterButtonBottomConstraint)
         } else {
@@ -197,11 +221,19 @@ final class ScannerViewController: UIViewController, SettingsUI {
                 view.bottomAnchor.constraint(equalTo: cancelButton.bottomAnchor, constant: (65.0 / 2) - 10.0)
             ]
             
+            
+            if settingsManager.settings.photoLibrary.isOn {
+                photoLibraryButtonConstraints = [
+                    photoLibraryButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24.0),
+                    photoLibraryButton.bottomAnchor.constraint(equalTo: cancelButton.bottomAnchor)
+                ]
+            }
+            
             let shutterButtonBottomConstraint = view.bottomAnchor.constraint(equalTo: shutterButton.bottomAnchor, constant: 8.0)
             shutterButtonConstraints.append(shutterButtonBottomConstraint)
         }
         
-        NSLayoutConstraint.activate(quadViewConstraints + cancelButtonConstraints + shutterButtonConstraints + activityIndicatorConstraints)
+        NSLayoutConstraint.activate(quadViewConstraints + cancelButtonConstraints + shutterButtonConstraints + activityIndicatorConstraints + photoLibraryButtonConstraints)
     }
     
     // MARK: - Tap to Focus
@@ -289,6 +321,58 @@ final class ScannerViewController: UIViewController, SettingsUI {
         imageScannerController.imageScannerDelegate?.imageScannerControllerDidCancel(imageScannerController)
     }
     
+    @objc private func chooseFromPhotoLibrary() {
+        let status = PHPhotoLibrary.authorizationStatus()
+        switch status {
+        case .authorized:
+            presentImagePicker()
+        case .notDetermined:
+            PHPhotoLibrary.requestAuthorization { (status) in
+                if status == .authorized {
+                    self.presentImagePicker()
+                } else {
+                    self.showPermissionAlert()
+                }
+            }
+        default: showPermissionAlert()
+        }
+    }
+    
+    func presentImagePicker() {
+        let photoLibrarySettings = settingsManager.settings.photoLibrary
+        
+        var parameters = Pickle.Parameters()
+        
+        parameters.allowedSelections = .limit(to: 1)
+        parameters.navigationBarTintColor = photoLibrarySettings.navigationBarTintColor
+        parameters.navigationBarTitleTintColor = photoLibrarySettings.navigationBarTitleTintColor
+        parameters.navigationBarTitleHighlightedColor = photoLibrarySettings.navigationBarTitleHighlightedColor
+        parameters.selectedImageOverlayColor = photoLibrarySettings.selectedImageOverlayColor
+        
+        let picker = ImagePickerController(selectedAssets: [],
+                                           configuration: parameters)
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+    
+    private func showPermissionAlert() {
+        let alert = UIAlertController.init(title: NSLocalizedString("wescan.scanning.photos.alert.title", tableName: nil, bundle: Bundle(for: ScannerViewController.self), value: "Photo access required", comment: "Photo access alert title"), message: nil, preferredStyle: .alert)
+        
+        alert.addAction(ScannerViewController.settings())
+        
+        alert.addAction(UIAlertAction(title: NSLocalizedString("wescan.scanning.cancel", tableName: nil, bundle: Bundle(for: ScannerViewController.self), value: "Cancel", comment: "The cancel button"), style: .cancel, handler: { _ in
+            alert.dismiss(animated: true)
+        }))
+        
+        present(alert, animated: true)
+    }
+    
+    static func settings() -> UIAlertAction {
+        let action = UIAlertAction(title: NSLocalizedString("wescan.scanning.settings", tableName: nil, bundle: Bundle(for: ScannerViewController.self), value: "Settings", comment: "The settings alert button"), style: .default) { _ in
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+        }
+        return action
+    }
 }
 
 extension ScannerViewController: RectangleDetectionDelegateProtocol {
@@ -328,9 +412,9 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
         let scaledImageSize = imageSize.applying(scaleTransform)
         
         let rotationTransform = CGAffineTransform(rotationAngle: CGFloat.pi / 2.0)
-
+        
         let imageBounds = CGRect(origin: .zero, size: scaledImageSize).applying(rotationTransform)
-
+        
         let translationTransform = CGAffineTransform.translateTransform(fromCenterOfRect: imageBounds, toCenterOfRect: quadView.bounds)
         
         let transforms = [scaleTransform, rotationTransform, translationTransform]
@@ -340,4 +424,49 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
         quadView.drawQuadrilateral(quad: transformedQuad, animated: true)
     }
     
+}
+
+extension ScannerViewController: ImagePickerControllerDelegate {
+    func imagePickerController(_ picker: ImagePickerController, shouldLaunchCameraWithAuthorization status: AVAuthorizationStatus) -> Bool {
+        return true
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: ImagePickerController) {
+        picker.dismiss(animated: true)
+    }
+    
+    func imagePickerController(_ picker: ImagePickerController, didFinishPickingImageAssets assets: [PHAsset]) {
+        guard let asset = assets.first,
+            let image = getThumbnail(asset, CGSize(width: view.bounds.width, height: view.bounds.height)),
+            let cgImage = image.cgImage else {
+            return picker.dismiss(animated: true)
+        }
+
+        picker.dismiss(animated: true)
+        
+        let flippedImage = UIImage(
+            cgImage: cgImage,
+            scale: image.scale,
+            orientation: .down
+        )
+
+        let editVC = EditScanViewController(image: flippedImage, quad: nil)
+        
+        navigationController?.pushViewController(editVC, animated: false)
+    }
+    
+    private func getThumbnail(_ asset: PHAsset, _ size: CGSize = CGSize(width: 100, height: 100)) -> UIImage? {
+        var thumbnail: UIImage?
+        let option = PHImageRequestOptions()
+        option.isSynchronous = true
+        option.isNetworkAccessAllowed = true
+        let manager = PHImageManager.default()
+        manager.requestImage(for: asset,
+                             targetSize: size,
+                             contentMode: .aspectFill,
+                             options: option) { result, info -> Void in
+                                thumbnail = result
+        }
+        return thumbnail
+    }
 }

@@ -1,0 +1,1071 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05ECD075CEC0A784D4DE2B24BF9323D0 /* Pickle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 719ABE5FBDE6671813E563F2D9040348 /* Pickle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		103C080BF02EB52382AB7E6D5DB4B6A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E9BE06390A5E1B98705AC80E098248 /* Images.xcassets */; };
+		173268AE9D837E5070269448AD661D2B /* SlideUpPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176C14FCBDE13144A95EF3E0C9A4EB9 /* SlideUpPresentingAnimator.swift */; };
+		1B211D37DDCBDAB99DEE704E9EA04268 /* CameraCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88151A182B48822BD23E107E12CF41E7 /* CameraCompatible.swift */; };
+		21C5592F27AB606B63B55FC528E9A6A6 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C53A5A40058897CEC4714732BE814C /* UIColor+Palette.swift */; };
+		275E30C5AE583C0D543DC751D6793B57 /* PhotoAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5BA743AAD004579D27D3BD4FB04DB3 /* PhotoAlbumCell.swift */; };
+		334DD7F12F2C477546B837F4AD32D4B6 /* PhotoGalleryViewController+UIViewControllerPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64238893935D5F0B2B99C1D81E327BF /* PhotoGalleryViewController+UIViewControllerPreviewing.swift */; };
+		3B5FAE04AB3BFDC2A07D339DA7F457BF /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96F7173959D161D10F5E570F113985 /* PhotoGalleryViewController.swift */; };
+		42414263B740376913F33282A762EFAB /* Pickle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF48BE917B67725C45F5B18C325C5F62 /* Pickle-dummy.m */; };
+		6012ADB8F19DC3A0942FF20BDFA14835 /* Pods-WeScanSampleProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C63BA1DD670D55AED63C41AB20B30D5D /* Pods-WeScanSampleProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60C94203F05BC8A2291562047625DD77 /* PhotoGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72674DFC95DF59EFAF8D805E9748EFB2 /* PhotoGalleryCell.swift */; };
+		61131F0A2D1E04CD3C744E75088C2D9C /* SlideUpPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B6D5FCA857EEEAB8427FF7C80D5813 /* SlideUpPresentationController.swift */; };
+		6884EFF310280A449F5BF0F7C1BB6A55 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D97DC758299F196FB79089A73F0F46C /* PhotoDetailViewController.swift */; };
+		68FF7A30CA6D7FF402AB895D2E74F983 /* PhotoGalleryHintLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9803F500F5A65685E3E07E1683E98A /* PhotoGalleryHintLabel.swift */; };
+		695DBD52A7C69C05C9B04E855BE77F47 /* Pods-WeScanTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 394D7EDAE02E1DC0288FE81B3D0E09C2 /* Pods-WeScanTests-dummy.m */; };
+		6A5B3C6FE64BB458FB15D9F505C05C81 /* UINavigationController+ImagePickerConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50AF505360CCE12A50218E6FCA6D60 /* UINavigationController+ImagePickerConfigurable.swift */; };
+		7791AF87EDB99D52A9612782508493BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCBF38194DBB88E517C51C147DFA8E30 /* Localizable.strings */; };
+		79D1FDD013E1F5E730E6E5EC47F8B2BC /* PhotoGalleryCameraIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052F0F8DDE394B2BE79BAF98896266C7 /* PhotoGalleryCameraIconView.swift */; };
+		7CA4C53BE8DFE858029C0508B8F4D562 /* Pods-WeScanSampleProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C970D093C49D2BEA9A6E61D40A5F91C /* Pods-WeScanSampleProject-dummy.m */; };
+		916BDA75AF7E887AC212CFD48A1F380A /* Pods-WeScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 207A7C1F616FA94FE074EAE3893C895D /* Pods-WeScan-dummy.m */; };
+		9216BE395916FA1120D2227D33E28DFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2372D335338BF5F404F0762FB913B46 /* Foundation.framework */; };
+		9BB732F66A553C0F20E3E478A5B4E416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2372D335338BF5F404F0762FB913B46 /* Foundation.framework */; };
+		9D18D83D923FC9E7CC332905D56C5AC4 /* Pods-WeScanTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 698B55E21E9A7CA78FAA74C3CAA735F4 /* Pods-WeScanTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A24DC3C8FD7C1B23E18A1B9638FEE86C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78804F6A762C9AE36808D81E0EB64435 /* Photos.framework */; };
+		A88B74A159444E2100969932F9C2502B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2372D335338BF5F404F0762FB913B46 /* Foundation.framework */; };
+		AC1832C6B73E62EBBB5B2782D8C8286A /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B1A78BE9964525FF51461F1D1DF14 /* ImagePickerController.swift */; };
+		AEE75C6DE7AABCADD442877AD321A2F3 /* ImagePickerConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A331AB654B48A8D9EACC12AC1EC93 /* ImagePickerConfigurable.swift */; };
+		AF04599137E4063BDB35888B470C85AD /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A376BB13172752BDF9142D2D8AADB440 /* UIFont+Style.swift */; };
+		B511F3C5006EA9024A3FE5A9D8CA3E0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2372D335338BF5F404F0762FB913B46 /* Foundation.framework */; };
+		B676BD5DF128D5D0090FADEEF9A33445 /* Pods-WeScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5EEC066D8F6FFDDDA0D3176622B066 /* Pods-WeScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF8A5DBBE6B296F0B2BA75BF3560781A /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2CBFD7EAF4B27DE80131EB87C801D6 /* Parameters.swift */; };
+		D7CA6FD12D28D9ACCFACD105B436E746 /* PhotoGalleryTagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0609D557BC3FEDBEABF5DFB326582C /* PhotoGalleryTagLabel.swift */; };
+		DDCA02F1B6E18A5B1564D630B5E526BB /* SlideUpPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E8E8CCD63C2FF93B21ED4DABB5B37C /* SlideUpPresentation.swift */; };
+		E3C41435BBBAA035319EA132323663B9 /* SlideDownDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44C85BFC041072B97FE0BCB9F4FFB07 /* SlideDownDismissingAnimator.swift */; };
+		F66490C89553110D5294CC3ADA0AB308 /* PhotoAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9A15491E77335D94A9279ABD56D187 /* PhotoAlbumsViewController.swift */; };
+		F950D6B4419C8EC0010CFE68F420167F /* PhotoAlbumTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F037D13269151A4BF32A781086A838 /* PhotoAlbumTitleButton.swift */; };
+		F9B7C967AA46238952D54EFD3E34C6EB /* PhotoGalleryCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5353FE934994538420F7CB9C01C0428 /* PhotoGalleryCameraCell.swift */; };
+		F9F2EA49956983B04E5442FA4CBF5300 /* PhotoAlbumsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5434DE33E4F9DFEE716B147A2C99A1E3 /* PhotoAlbumsTableView.swift */; };
+		FB6E3822F06696419D8FFE2F80890687 /* ImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB175D256AF1360CA96284C5C670371 /* ImagePickerControllerDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CE8E63FE1CC822F3228F7D2F066138F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8762F010AF3DC359CB8D7225CE9A9744;
+			remoteInfo = Pickle;
+		};
+		B6E01A0093D137D3E35FD59A70FFBD49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8762F010AF3DC359CB8D7225CE9A9744;
+			remoteInfo = Pickle;
+		};
+		F6DCB2E7685E7E5644952394CFC8F7FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB0CE7A26F1BC1604A487B8668E5F01;
+			remoteInfo = "Pods-WeScan";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		052F0F8DDE394B2BE79BAF98896266C7 /* PhotoGalleryCameraIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoGalleryCameraIconView.swift; path = Pickle/Classes/PhotoGalleryCameraIconView.swift; sourceTree = "<group>"; };
+		05E8E8CCD63C2FF93B21ED4DABB5B37C /* SlideUpPresentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideUpPresentation.swift; path = Pickle/Classes/SlideUpPresentation.swift; sourceTree = "<group>"; };
+		08225FF6C7FB22EFC0393500D191BF26 /* Pods_WeScanSampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeScanSampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F037D13269151A4BF32A781086A838 /* PhotoAlbumTitleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoAlbumTitleButton.swift; path = Pickle/Classes/PhotoAlbumTitleButton.swift; sourceTree = "<group>"; };
+		0F5BA743AAD004579D27D3BD4FB04DB3 /* PhotoAlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoAlbumCell.swift; path = Pickle/Classes/PhotoAlbumCell.swift; sourceTree = "<group>"; };
+		15D0C9891D372AC6CDD69B86860AA483 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1B417332B31A48CC545105DE135916A4 /* Pickle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pickle-prefix.pch"; sourceTree = "<group>"; };
+		1BD58326250A8D327ACAE4AFDB0281EC /* Pods-WeScanSampleProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeScanSampleProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		207A7C1F616FA94FE074EAE3893C895D /* Pods-WeScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeScan-dummy.m"; sourceTree = "<group>"; };
+		2301085CB214577ACF8F4DD392E78865 /* Pickle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pickle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		295F3B975CAD5D6FEBF0C6555AC99613 /* Pods_WeScanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeScanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D17F5DC481A70B22B7C7B52C86941CF /* Pickle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pickle.xcconfig; sourceTree = "<group>"; };
+		2F61BD4BB76BE3435ACA93CB715D68D6 /* Pods-WeScanSampleProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeScanSampleProject.modulemap"; sourceTree = "<group>"; };
+		394D7EDAE02E1DC0288FE81B3D0E09C2 /* Pods-WeScanTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeScanTests-dummy.m"; sourceTree = "<group>"; };
+		3C6CF8A61DF592D1B8DD8CAD9214E705 /* Pods-WeScanTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeScanTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D97DC758299F196FB79089A73F0F46C /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoDetailViewController.swift; path = Pickle/Classes/PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		3E2CBFD7EAF4B27DE80131EB87C801D6 /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Pickle/Classes/Parameters.swift; sourceTree = "<group>"; };
+		4A31953437523529BF0C3BFBEEF8FF2E /* Pods-WeScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeScan.release.xcconfig"; sourceTree = "<group>"; };
+		4B0439690EDD00B6412999E32BD4CA9A /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4DB175D256AF1360CA96284C5C670371 /* ImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerControllerDelegate.swift; path = Pickle/Classes/ImagePickerControllerDelegate.swift; sourceTree = "<group>"; };
+		5434DE33E4F9DFEE716B147A2C99A1E3 /* PhotoAlbumsTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoAlbumsTableView.swift; path = Pickle/Classes/PhotoAlbumsTableView.swift; sourceTree = "<group>"; };
+		55E9BE06390A5E1B98705AC80E098248 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Pickle/Assets/Images.xcassets; sourceTree = "<group>"; };
+		5C9A15491E77335D94A9279ABD56D187 /* PhotoAlbumsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoAlbumsViewController.swift; path = Pickle/Classes/PhotoAlbumsViewController.swift; sourceTree = "<group>"; };
+		5E04C91792F31C57A8F96CE88B06E74A /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6249459E4C924FD7A8E672E0B8586CD0 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63B8060EE1F1C95128F5430E10576806 /* Pods-WeScanTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeScanTests-Info.plist"; sourceTree = "<group>"; };
+		6537FC476919476D7C6BD5AD4FA1FAC2 /* Pods-WeScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeScan-Info.plist"; sourceTree = "<group>"; };
+		6555F2B56E88EDB2DB8873E6B23575F7 /* Pods-WeScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeScan.modulemap"; sourceTree = "<group>"; };
+		67550AA9F67DA5CB927C74EE57259F1A /* Pods-WeScanTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeScanTests.modulemap"; sourceTree = "<group>"; };
+		698B55E21E9A7CA78FAA74C3CAA735F4 /* Pods-WeScanTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeScanTests-umbrella.h"; sourceTree = "<group>"; };
+		6A9C7FF505798542B2D0A688616FAD46 /* Pods-WeScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeScan.debug.xcconfig"; sourceTree = "<group>"; };
+		70E2E04CA7D327553E1214D6394665EF /* Pods_WeScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		719ABE5FBDE6671813E563F2D9040348 /* Pickle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pickle-umbrella.h"; sourceTree = "<group>"; };
+		72674DFC95DF59EFAF8D805E9748EFB2 /* PhotoGalleryCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoGalleryCell.swift; path = Pickle/Classes/PhotoGalleryCell.swift; sourceTree = "<group>"; };
+		73BB949F272C8D0BBFB7DD05EDDA2942 /* Pods-WeScanSampleProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeScanSampleProject-Info.plist"; sourceTree = "<group>"; };
+		7724470A2D269C626AA31F0D76E78CC8 /* Pickle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pickle.modulemap; sourceTree = "<group>"; };
+		781DE5ACF0F2D98D7CA358FFA39F8198 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hant-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		78804F6A762C9AE36808D81E0EB64435 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		79C86A8BCB08D17A0B57E7D2F3B575F2 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7B0D1620577F017A74B28C8737665713 /* Pods-WeScanTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeScanTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C96F7173959D161D10F5E570F113985 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoGalleryViewController.swift; path = Pickle/Classes/PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		7D5B1A78BE9964525FF51461F1D1DF14 /* ImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerController.swift; path = Pickle/Classes/ImagePickerController.swift; sourceTree = "<group>"; };
+		7DC6A70675C72C5ED9E8FCB8AB3855F6 /* Pods-WeScanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeScanTests.release.xcconfig"; sourceTree = "<group>"; };
+		88151A182B48822BD23E107E12CF41E7 /* CameraCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraCompatible.swift; path = Pickle/Classes/CameraCompatible.swift; sourceTree = "<group>"; };
+		8A50AF505360CCE12A50218E6FCA6D60 /* UINavigationController+ImagePickerConfigurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+ImagePickerConfigurable.swift"; path = "Pickle/Classes/UINavigationController+ImagePickerConfigurable.swift"; sourceTree = "<group>"; };
+		8D5EEC066D8F6FFDDDA0D3176622B066 /* Pods-WeScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeScan-umbrella.h"; sourceTree = "<group>"; };
+		953A6503732D2BB6552DC01D96082307 /* Pods-WeScanSampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeScanSampleProject.release.xcconfig"; sourceTree = "<group>"; };
+		99B6D5FCA857EEEAB8427FF7C80D5813 /* SlideUpPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideUpPresentationController.swift; path = Pickle/Classes/SlideUpPresentationController.swift; sourceTree = "<group>"; };
+		9C970D093C49D2BEA9A6E61D40A5F91C /* Pods-WeScanSampleProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeScanSampleProject-dummy.m"; sourceTree = "<group>"; };
+		9D2A331AB654B48A8D9EACC12AC1EC93 /* ImagePickerConfigurable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerConfigurable.swift; path = Pickle/Classes/ImagePickerConfigurable.swift; sourceTree = "<group>"; };
+		9D4648ED83AFE3A60D029BFCCC229356 /* Pods-WeScan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeScan-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D72A3265FE37B0D5750F46A4C85E370 /* Pods-WeScanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeScanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2372D335338BF5F404F0762FB913B46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A35D1BB0865FDB5D7F7F24E8BA3A2ADC /* Pods-WeScanSampleProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeScanSampleProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A376BB13172752BDF9142D2D8AADB440 /* UIFont+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+Style.swift"; path = "Pickle/Classes/UIFont+Style.swift"; sourceTree = "<group>"; };
+		B7C53A5A40058897CEC4714732BE814C /* UIColor+Palette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Palette.swift"; path = "Pickle/Classes/UIColor+Palette.swift"; sourceTree = "<group>"; };
+		BD3B44961F7F5FEACA1A338E65475741 /* Pods-WeScan-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeScan-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0310C247D60E813475607409D456323 /* Pickle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pickle-Info.plist"; sourceTree = "<group>"; };
+		C63BA1DD670D55AED63C41AB20B30D5D /* Pods-WeScanSampleProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeScanSampleProject-umbrella.h"; sourceTree = "<group>"; };
+		C64238893935D5F0B2B99C1D81E327BF /* PhotoGalleryViewController+UIViewControllerPreviewing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PhotoGalleryViewController+UIViewControllerPreviewing.swift"; path = "Pickle/Classes/PhotoGalleryViewController+UIViewControllerPreviewing.swift"; sourceTree = "<group>"; };
+		CD9803F500F5A65685E3E07E1683E98A /* PhotoGalleryHintLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoGalleryHintLabel.swift; path = Pickle/Classes/PhotoGalleryHintLabel.swift; sourceTree = "<group>"; };
+		CF48BE917B67725C45F5B18C325C5F62 /* Pickle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pickle-dummy.m"; sourceTree = "<group>"; };
+		D21693CC8B6443EE5F521A0FE61B193C /* Pods-WeScanSampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeScanSampleProject.debug.xcconfig"; sourceTree = "<group>"; };
+		DAB14376318D54158283C97073D4C4FD /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E44C85BFC041072B97FE0BCB9F4FFB07 /* SlideDownDismissingAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideDownDismissingAnimator.swift; path = Pickle/Classes/SlideDownDismissingAnimator.swift; sourceTree = "<group>"; };
+		E5353FE934994538420F7CB9C01C0428 /* PhotoGalleryCameraCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoGalleryCameraCell.swift; path = Pickle/Classes/PhotoGalleryCameraCell.swift; sourceTree = "<group>"; };
+		EB5A8F7268A26919872AADAE650275B0 /* Pods-WeScanSampleProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeScanSampleProject-frameworks.sh"; sourceTree = "<group>"; };
+		ED0609D557BC3FEDBEABF5DFB326582C /* PhotoGalleryTagLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoGalleryTagLabel.swift; path = Pickle/Classes/PhotoGalleryTagLabel.swift; sourceTree = "<group>"; };
+		F176C14FCBDE13144A95EF3E0C9A4EB9 /* SlideUpPresentingAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideUpPresentingAnimator.swift; path = Pickle/Classes/SlideUpPresentingAnimator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E421958030A2307601F63AE60BD5B99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B511F3C5006EA9024A3FE5A9D8CA3E0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CFF2DED1CBDE231C93B34147328ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88B74A159444E2100969932F9C2502B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFE10BC56F6BFF8AC94A935F3BB1682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9216BE395916FA1120D2227D33E28DFE /* Foundation.framework in Frameworks */,
+				A24DC3C8FD7C1B23E18A1B9638FEE86C /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF7EF99E0E093D5574AE1451DCFF3CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB732F66A553C0F20E3E478A5B4E416 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1EA17F3C3F1BF453309E00FDBE45B62 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E2737D1CE147174B1C00B93E4491DFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55E9BE06390A5E1B98705AC80E098248 /* Images.xcassets */,
+				FCBF38194DBB88E517C51C147DFA8E30 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		511AF77B82C17758B197BFD1A33FCF9B /* Pickle */ = {
+			isa = PBXGroup;
+			children = (
+				88151A182B48822BD23E107E12CF41E7 /* CameraCompatible.swift */,
+				9D2A331AB654B48A8D9EACC12AC1EC93 /* ImagePickerConfigurable.swift */,
+				7D5B1A78BE9964525FF51461F1D1DF14 /* ImagePickerController.swift */,
+				4DB175D256AF1360CA96284C5C670371 /* ImagePickerControllerDelegate.swift */,
+				3E2CBFD7EAF4B27DE80131EB87C801D6 /* Parameters.swift */,
+				0F5BA743AAD004579D27D3BD4FB04DB3 /* PhotoAlbumCell.swift */,
+				5434DE33E4F9DFEE716B147A2C99A1E3 /* PhotoAlbumsTableView.swift */,
+				5C9A15491E77335D94A9279ABD56D187 /* PhotoAlbumsViewController.swift */,
+				09F037D13269151A4BF32A781086A838 /* PhotoAlbumTitleButton.swift */,
+				3D97DC758299F196FB79089A73F0F46C /* PhotoDetailViewController.swift */,
+				E5353FE934994538420F7CB9C01C0428 /* PhotoGalleryCameraCell.swift */,
+				052F0F8DDE394B2BE79BAF98896266C7 /* PhotoGalleryCameraIconView.swift */,
+				72674DFC95DF59EFAF8D805E9748EFB2 /* PhotoGalleryCell.swift */,
+				CD9803F500F5A65685E3E07E1683E98A /* PhotoGalleryHintLabel.swift */,
+				ED0609D557BC3FEDBEABF5DFB326582C /* PhotoGalleryTagLabel.swift */,
+				7C96F7173959D161D10F5E570F113985 /* PhotoGalleryViewController.swift */,
+				C64238893935D5F0B2B99C1D81E327BF /* PhotoGalleryViewController+UIViewControllerPreviewing.swift */,
+				E44C85BFC041072B97FE0BCB9F4FFB07 /* SlideDownDismissingAnimator.swift */,
+				05E8E8CCD63C2FF93B21ED4DABB5B37C /* SlideUpPresentation.swift */,
+				99B6D5FCA857EEEAB8427FF7C80D5813 /* SlideUpPresentationController.swift */,
+				F176C14FCBDE13144A95EF3E0C9A4EB9 /* SlideUpPresentingAnimator.swift */,
+				B7C53A5A40058897CEC4714732BE814C /* UIColor+Palette.swift */,
+				A376BB13172752BDF9142D2D8AADB440 /* UIFont+Style.swift */,
+				8A50AF505360CCE12A50218E6FCA6D60 /* UINavigationController+ImagePickerConfigurable.swift */,
+				4E2737D1CE147174B1C00B93E4491DFF /* Resources */,
+				9687DCA2C7DF01E139C3E4792731CD2F /* Support Files */,
+			);
+			path = Pickle;
+			sourceTree = "<group>";
+		};
+		5C793B4F9F4837FE741F9BADE7DB376B /* Pods-WeScanSampleProject */ = {
+			isa = PBXGroup;
+			children = (
+				2F61BD4BB76BE3435ACA93CB715D68D6 /* Pods-WeScanSampleProject.modulemap */,
+				A35D1BB0865FDB5D7F7F24E8BA3A2ADC /* Pods-WeScanSampleProject-acknowledgements.markdown */,
+				1BD58326250A8D327ACAE4AFDB0281EC /* Pods-WeScanSampleProject-acknowledgements.plist */,
+				9C970D093C49D2BEA9A6E61D40A5F91C /* Pods-WeScanSampleProject-dummy.m */,
+				EB5A8F7268A26919872AADAE650275B0 /* Pods-WeScanSampleProject-frameworks.sh */,
+				73BB949F272C8D0BBFB7DD05EDDA2942 /* Pods-WeScanSampleProject-Info.plist */,
+				C63BA1DD670D55AED63C41AB20B30D5D /* Pods-WeScanSampleProject-umbrella.h */,
+				D21693CC8B6443EE5F521A0FE61B193C /* Pods-WeScanSampleProject.debug.xcconfig */,
+				953A6503732D2BB6552DC01D96082307 /* Pods-WeScanSampleProject.release.xcconfig */,
+			);
+			name = "Pods-WeScanSampleProject";
+			path = "Target Support Files/Pods-WeScanSampleProject";
+			sourceTree = "<group>";
+		};
+		8A6BACD0E55FCD439F5E4D5BE3E0CFBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				511AF77B82C17758B197BFD1A33FCF9B /* Pickle */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F9E16C8198E52DF6033E38E96EE5EC7 /* Pods-WeScanTests */ = {
+			isa = PBXGroup;
+			children = (
+				67550AA9F67DA5CB927C74EE57259F1A /* Pods-WeScanTests.modulemap */,
+				3C6CF8A61DF592D1B8DD8CAD9214E705 /* Pods-WeScanTests-acknowledgements.markdown */,
+				7B0D1620577F017A74B28C8737665713 /* Pods-WeScanTests-acknowledgements.plist */,
+				394D7EDAE02E1DC0288FE81B3D0E09C2 /* Pods-WeScanTests-dummy.m */,
+				63B8060EE1F1C95128F5430E10576806 /* Pods-WeScanTests-Info.plist */,
+				698B55E21E9A7CA78FAA74C3CAA735F4 /* Pods-WeScanTests-umbrella.h */,
+				9D72A3265FE37B0D5750F46A4C85E370 /* Pods-WeScanTests.debug.xcconfig */,
+				7DC6A70675C72C5ED9E8FCB8AB3855F6 /* Pods-WeScanTests.release.xcconfig */,
+			);
+			name = "Pods-WeScanTests";
+			path = "Target Support Files/Pods-WeScanTests";
+			sourceTree = "<group>";
+		};
+		93BCB7B20D0A78BF24BDCCE0F03BA5EB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D00753E46F0CD1BF35733B8C59344E5 /* Pods-WeScan */,
+				5C793B4F9F4837FE741F9BADE7DB376B /* Pods-WeScanSampleProject */,
+				8F9E16C8198E52DF6033E38E96EE5EC7 /* Pods-WeScanTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9641A8A0F85F96BB9DD709CAC543A487 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2301085CB214577ACF8F4DD392E78865 /* Pickle.framework */,
+				70E2E04CA7D327553E1214D6394665EF /* Pods_WeScan.framework */,
+				08225FF6C7FB22EFC0393500D191BF26 /* Pods_WeScanSampleProject.framework */,
+				295F3B975CAD5D6FEBF0C6555AC99613 /* Pods_WeScanTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9687DCA2C7DF01E139C3E4792731CD2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7724470A2D269C626AA31F0D76E78CC8 /* Pickle.modulemap */,
+				2D17F5DC481A70B22B7C7B52C86941CF /* Pickle.xcconfig */,
+				CF48BE917B67725C45F5B18C325C5F62 /* Pickle-dummy.m */,
+				C0310C247D60E813475607409D456323 /* Pickle-Info.plist */,
+				1B417332B31A48CC545105DE135916A4 /* Pickle-prefix.pch */,
+				719ABE5FBDE6671813E563F2D9040348 /* Pickle-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pickle";
+			sourceTree = "<group>";
+		};
+		9D00753E46F0CD1BF35733B8C59344E5 /* Pods-WeScan */ = {
+			isa = PBXGroup;
+			children = (
+				6555F2B56E88EDB2DB8873E6B23575F7 /* Pods-WeScan.modulemap */,
+				9D4648ED83AFE3A60D029BFCCC229356 /* Pods-WeScan-acknowledgements.markdown */,
+				BD3B44961F7F5FEACA1A338E65475741 /* Pods-WeScan-acknowledgements.plist */,
+				207A7C1F616FA94FE074EAE3893C895D /* Pods-WeScan-dummy.m */,
+				6537FC476919476D7C6BD5AD4FA1FAC2 /* Pods-WeScan-Info.plist */,
+				8D5EEC066D8F6FFDDDA0D3176622B066 /* Pods-WeScan-umbrella.h */,
+				6A9C7FF505798542B2D0A688616FAD46 /* Pods-WeScan.debug.xcconfig */,
+				4A31953437523529BF0C3BFBEEF8FF2E /* Pods-WeScan.release.xcconfig */,
+			);
+			name = "Pods-WeScan";
+			path = "Target Support Files/Pods-WeScan";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				8A6BACD0E55FCD439F5E4D5BE3E0CFBB /* Pods */,
+				9641A8A0F85F96BB9DD709CAC543A487 /* Products */,
+				93BCB7B20D0A78BF24BDCCE0F03BA5EB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1EA17F3C3F1BF453309E00FDBE45B62 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2372D335338BF5F404F0762FB913B46 /* Foundation.framework */,
+				78804F6A762C9AE36808D81E0EB64435 /* Photos.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44767DB32D9D843C3FC05F7F64A39B30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05ECD075CEC0A784D4DE2B24BF9323D0 /* Pickle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89F447137BF85E85CB533B0C09BEB98F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D18D83D923FC9E7CC332905D56C5AC4 /* Pods-WeScanTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3BF393A93E862FF2EC1D3FCDFB6A7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B676BD5DF128D5D0090FADEEF9A33445 /* Pods-WeScan-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F369439AB54B07921BCFED74EEA62819 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6012ADB8F19DC3A0942FF20BDFA14835 /* Pods-WeScanSampleProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EB0CE7A26F1BC1604A487B8668E5F01 /* Pods-WeScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CCFD892374E68A16C1FEDC2721CE6E /* Build configuration list for PBXNativeTarget "Pods-WeScan" */;
+			buildPhases = (
+				DC3BF393A93E862FF2EC1D3FCDFB6A7E /* Headers */,
+				21EBF031579C2D86FAF30A443D9B4782 /* Sources */,
+				BF7EF99E0E093D5574AE1451DCFF3CD2 /* Frameworks */,
+				701450B3F696E50B80DCD53CDC0148B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E63C75E46B25E4880825CB899EF7D0F /* PBXTargetDependency */,
+			);
+			name = "Pods-WeScan";
+			productName = "Pods-WeScan";
+			productReference = 70E2E04CA7D327553E1214D6394665EF /* Pods_WeScan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6BC3E05AEA62CBE81EB7DFFC54493456 /* Pods-WeScanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C8424632BDE4B7F1A4DC28210BED944 /* Build configuration list for PBXNativeTarget "Pods-WeScanTests" */;
+			buildPhases = (
+				89F447137BF85E85CB533B0C09BEB98F /* Headers */,
+				15B8718917CFC6478BC93D7F257FA695 /* Sources */,
+				13CFF2DED1CBDE231C93B34147328ADA /* Frameworks */,
+				53E02E0ED3524772A015888541E2FF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F6D25FF3899ACD9AE64202141065F56 /* PBXTargetDependency */,
+			);
+			name = "Pods-WeScanTests";
+			productName = "Pods-WeScanTests";
+			productReference = 295F3B975CAD5D6FEBF0C6555AC99613 /* Pods_WeScanTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8762F010AF3DC359CB8D7225CE9A9744 /* Pickle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC20C9B4184425CF6AF2C1858854013 /* Build configuration list for PBXNativeTarget "Pickle" */;
+			buildPhases = (
+				44767DB32D9D843C3FC05F7F64A39B30 /* Headers */,
+				93CE6C59D8F2C96D64FE43DF36577392 /* Sources */,
+				3DFE10BC56F6BFF8AC94A935F3BB1682 /* Frameworks */,
+				9372B8623AB6668F4087ADCDA611BF2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pickle;
+			productName = Pickle;
+			productReference = 2301085CB214577ACF8F4DD392E78865 /* Pickle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9322EF1B7BB93CE3DB5FC43DD5D21DE /* Pods-WeScanSampleProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B81F03654BD050DC1A345D98C4CF383 /* Build configuration list for PBXNativeTarget "Pods-WeScanSampleProject" */;
+			buildPhases = (
+				F369439AB54B07921BCFED74EEA62819 /* Headers */,
+				DBCEB3DE812DDB006828CAEE3A1A306A /* Sources */,
+				0E421958030A2307601F63AE60BD5B99 /* Frameworks */,
+				BF4071B715E89023776F61A372864F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D0BCF82106BC16F5F529DF4BB3401EA /* PBXTargetDependency */,
+			);
+			name = "Pods-WeScanSampleProject";
+			productName = "Pods-WeScanSampleProject";
+			productReference = 08225FF6C7FB22EFC0393500D191BF26 /* Pods_WeScanSampleProject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				id,
+				ko,
+				ms,
+				"zh-Hant-HK",
+				"zh-Hant",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9641A8A0F85F96BB9DD709CAC543A487 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8762F010AF3DC359CB8D7225CE9A9744 /* Pickle */,
+				0EB0CE7A26F1BC1604A487B8668E5F01 /* Pods-WeScan */,
+				C9322EF1B7BB93CE3DB5FC43DD5D21DE /* Pods-WeScanSampleProject */,
+				6BC3E05AEA62CBE81EB7DFFC54493456 /* Pods-WeScanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53E02E0ED3524772A015888541E2FF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701450B3F696E50B80DCD53CDC0148B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9372B8623AB6668F4087ADCDA611BF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				103C080BF02EB52382AB7E6D5DB4B6A7 /* Images.xcassets in Resources */,
+				7791AF87EDB99D52A9612782508493BD /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF4071B715E89023776F61A372864F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15B8718917CFC6478BC93D7F257FA695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695DBD52A7C69C05C9B04E855BE77F47 /* Pods-WeScanTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EBF031579C2D86FAF30A443D9B4782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916BDA75AF7E887AC212CFD48A1F380A /* Pods-WeScan-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CE6C59D8F2C96D64FE43DF36577392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B211D37DDCBDAB99DEE704E9EA04268 /* CameraCompatible.swift in Sources */,
+				AEE75C6DE7AABCADD442877AD321A2F3 /* ImagePickerConfigurable.swift in Sources */,
+				AC1832C6B73E62EBBB5B2782D8C8286A /* ImagePickerController.swift in Sources */,
+				FB6E3822F06696419D8FFE2F80890687 /* ImagePickerControllerDelegate.swift in Sources */,
+				CF8A5DBBE6B296F0B2BA75BF3560781A /* Parameters.swift in Sources */,
+				275E30C5AE583C0D543DC751D6793B57 /* PhotoAlbumCell.swift in Sources */,
+				F9F2EA49956983B04E5442FA4CBF5300 /* PhotoAlbumsTableView.swift in Sources */,
+				F66490C89553110D5294CC3ADA0AB308 /* PhotoAlbumsViewController.swift in Sources */,
+				F950D6B4419C8EC0010CFE68F420167F /* PhotoAlbumTitleButton.swift in Sources */,
+				6884EFF310280A449F5BF0F7C1BB6A55 /* PhotoDetailViewController.swift in Sources */,
+				F9B7C967AA46238952D54EFD3E34C6EB /* PhotoGalleryCameraCell.swift in Sources */,
+				79D1FDD013E1F5E730E6E5EC47F8B2BC /* PhotoGalleryCameraIconView.swift in Sources */,
+				60C94203F05BC8A2291562047625DD77 /* PhotoGalleryCell.swift in Sources */,
+				68FF7A30CA6D7FF402AB895D2E74F983 /* PhotoGalleryHintLabel.swift in Sources */,
+				D7CA6FD12D28D9ACCFACD105B436E746 /* PhotoGalleryTagLabel.swift in Sources */,
+				334DD7F12F2C477546B837F4AD32D4B6 /* PhotoGalleryViewController+UIViewControllerPreviewing.swift in Sources */,
+				3B5FAE04AB3BFDC2A07D339DA7F457BF /* PhotoGalleryViewController.swift in Sources */,
+				42414263B740376913F33282A762EFAB /* Pickle-dummy.m in Sources */,
+				E3C41435BBBAA035319EA132323663B9 /* SlideDownDismissingAnimator.swift in Sources */,
+				DDCA02F1B6E18A5B1564D630B5E526BB /* SlideUpPresentation.swift in Sources */,
+				61131F0A2D1E04CD3C744E75088C2D9C /* SlideUpPresentationController.swift in Sources */,
+				173268AE9D837E5070269448AD661D2B /* SlideUpPresentingAnimator.swift in Sources */,
+				21C5592F27AB606B63B55FC528E9A6A6 /* UIColor+Palette.swift in Sources */,
+				AF04599137E4063BDB35888B470C85AD /* UIFont+Style.swift in Sources */,
+				6A5B3C6FE64BB458FB15D9F505C05C81 /* UINavigationController+ImagePickerConfigurable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBCEB3DE812DDB006828CAEE3A1A306A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA4C53BE8DFE858029C0508B8F4D562 /* Pods-WeScanSampleProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D0BCF82106BC16F5F529DF4BB3401EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pickle;
+			target = 8762F010AF3DC359CB8D7225CE9A9744 /* Pickle */;
+			targetProxy = 1CE8E63FE1CC822F3228F7D2F066138F /* PBXContainerItemProxy */;
+		};
+		2E63C75E46B25E4880825CB899EF7D0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pickle;
+			target = 8762F010AF3DC359CB8D7225CE9A9744 /* Pickle */;
+			targetProxy = B6E01A0093D137D3E35FD59A70FFBD49 /* PBXContainerItemProxy */;
+		};
+		6F6D25FF3899ACD9AE64202141065F56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WeScan";
+			target = 0EB0CE7A26F1BC1604A487B8668E5F01 /* Pods-WeScan */;
+			targetProxy = F6DCB2E7685E7E5644952394CFC8F7FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCBF38194DBB88E517C51C147DFA8E30 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB14376318D54158283C97073D4C4FD /* Localizable.strings */,
+				15D0C9891D372AC6CDD69B86860AA483 /* Localizable.strings */,
+				4B0439690EDD00B6412999E32BD4CA9A /* Localizable.strings */,
+				5E04C91792F31C57A8F96CE88B06E74A /* Localizable.strings */,
+				6249459E4C924FD7A8E672E0B8586CD0 /* Localizable.strings */,
+				781DE5ACF0F2D98D7CA358FFA39F8198 /* Localizable.strings */,
+				79C86A8BCB08D17A0B57E7D2F3B575F2 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = Pickle/Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		609194BCD59F62E58520030FDBDF5520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953A6503732D2BB6552DC01D96082307 /* Pods-WeScanSampleProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66D0F5E0B739EA66A38B0B8CB6C236B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9C7FF505798542B2D0A688616FAD46 /* Pods-WeScan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeScan/Pods-WeScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeScan/Pods-WeScan.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A990928C821256CEFA45E60ED212682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D17F5DC481A70B22B7C7B52C86941CF /* Pickle.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pickle/Pickle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pickle/Pickle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pickle/Pickle.modulemap";
+				PRODUCT_MODULE_NAME = Pickle;
+				PRODUCT_NAME = Pickle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C572A4EE9C7000CC0F565B4F59E0760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21693CC8B6443EE5F521A0FE61B193C /* Pods-WeScanSampleProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FE809836C3D0FF7FEBB538E82EC28DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A31953437523529BF0C3BFBEEF8FF2E /* Pods-WeScan.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeScan/Pods-WeScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeScan/Pods-WeScan.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1244D115EB5F40E98A1311AD8A16254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC6A70675C72C5ED9E8FCB8AB3855F6 /* Pods-WeScanTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeScanTests/Pods-WeScanTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeScanTests/Pods-WeScanTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B11B5439DB66BA03C1102FF06D15ED47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D17F5DC481A70B22B7C7B52C86941CF /* Pickle.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pickle/Pickle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pickle/Pickle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pickle/Pickle.modulemap";
+				PRODUCT_MODULE_NAME = Pickle;
+				PRODUCT_NAME = Pickle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6EBD41BDFCFE1C59EBC5A5F16F653AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D72A3265FE37B0D5750F46A4C85E370 /* Pods-WeScanTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeScanTests/Pods-WeScanTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeScanTests/Pods-WeScanTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC20C9B4184425CF6AF2C1858854013 /* Build configuration list for PBXNativeTarget "Pickle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B11B5439DB66BA03C1102FF06D15ED47 /* Debug */,
+				7A990928C821256CEFA45E60ED212682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C8424632BDE4B7F1A4DC28210BED944 /* Build configuration list for PBXNativeTarget "Pods-WeScanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EBD41BDFCFE1C59EBC5A5F16F653AC /* Debug */,
+				A1244D115EB5F40E98A1311AD8A16254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B81F03654BD050DC1A345D98C4CF383 /* Build configuration list for PBXNativeTarget "Pods-WeScanSampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C572A4EE9C7000CC0F565B4F59E0760 /* Debug */,
+				609194BCD59F62E58520030FDBDF5520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CCFD892374E68A16C1FEDC2721CE6E /* Build configuration list for PBXNativeTarget "Pods-WeScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D0F5E0B739EA66A38B0B8CB6C236B5 /* Debug */,
+				7FE809836C3D0FF7FEBB538E82EC28DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

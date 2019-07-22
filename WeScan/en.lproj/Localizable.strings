@@ -19,3 +19,7 @@
 "wescan.scanning.cancel" = "Cancel";
 "wescan.scanning.auto" = "Auto";
 "wescan.scanning.manual" = "Manual";
+
+"wescan.scanning.photos" = "Photos";
+"wescan.scanning.photos.alert.title" = "Photo access required";
+"wescan.scanning.photos.settings" = "Settings";

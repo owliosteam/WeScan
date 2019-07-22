@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02421C7D0336CAFDB1747995 /* Pods_WeScanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DCF3D0DE526EF97B974190 /* Pods_WeScanTests.framework */; };
+		1F8FC22AFDF3A1F1F54C7E9F /* Pods_WeScanSampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E741530F11273A254D4BA75 /* Pods_WeScanSampleProject.framework */; };
 		74E27858215446C900361812 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E27850215446C200361812 /* FBSnapshotTestCase.framework */; };
 		74F7D034211ACBD90046AF7E /* CIRectangleDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F7D033211ACBD90046AF7E /* CIRectangleDetectorTests.swift */; };
 		74F7D036211ACBEE0046AF7E /* CaptureSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F7D035211ACBEE0046AF7E /* CaptureSessionTests.swift */; };
@@ -74,6 +76,7 @@
 		B9E49DBE21BFD3BB000E994D /* rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E49DBB21BFD3BA000E994D /* rotate.png */; };
 		B9E49DBF21BFD3BB000E994D /* rotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E49DBC21BFD3BB000E994D /* rotate@2x.png */; };
 		B9E49DC021BFD3BB000E994D /* rotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9E49DBD21BFD3BB000E994D /* rotate@3x.png */; };
+		BAB3E0A846CE0E69D63D397A /* Pods_WeScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D946BBEE8528599DBE9B0BCD /* Pods_WeScan.framework */; };
 		C31DD8A320C087D80072D439 /* ZoomGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DD8A220C087D80072D439 /* ZoomGestureController.swift */; };
 		C3789C9B20CC69AD001B423F /* QuadrilateralViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3789C9A20CC69AD001B423F /* QuadrilateralViewTests.swift */; };
 		C3E2EB8E20B8970800A42E58 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E2EB8D20B8970800A42E58 /* UIImage+Utils.swift */; };
@@ -184,6 +187,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CEB9B3A98E1C152D1117807 /* Pods-WeScanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeScanTests.debug.xcconfig"; path = "Target Support Files/Pods-WeScanTests/Pods-WeScanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27ADE8B345C8190E811E011A /* Pods-WeScanSampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeScanSampleProject.release.xcconfig"; path = "Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject.release.xcconfig"; sourceTree = "<group>"; };
+		3E741530F11273A254D4BA75 /* Pods_WeScanSampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeScanSampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172A86CE09D30BB5AF8A826 /* Pods-WeScanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeScanTests.release.xcconfig"; path = "Target Support Files/Pods-WeScanTests/Pods-WeScanTests.release.xcconfig"; sourceTree = "<group>"; };
+		42E030686ADCF4C3840F0122 /* Pods-WeScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeScan.debug.xcconfig"; path = "Target Support Files/Pods-WeScan/Pods-WeScan.debug.xcconfig"; sourceTree = "<group>"; };
 		4A644E2221A73C2B00B20839 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		74E27848215446C200361812 /* FBSnapshotTestCase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FBSnapshotTestCase.xcodeproj; path = "Submodules/ios-snapshot-test-case/FBSnapshotTestCase.xcodeproj"; sourceTree = "<group>"; };
 		74E2785B2154528300361812 /* FBSnapshotTestCase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FBSnapshotTestCase.xcodeproj; path = "Submodules/ios-snapshot-test-case/FBSnapshotTestCase.xcodeproj"; sourceTree = SOURCE_ROOT; };
@@ -193,7 +201,9 @@
 		74F7D039211ACC4B0046AF7E /* UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTests.swift; sourceTree = "<group>"; };
 		74F7D03B211ACC6B0046AF7E /* CGAffineTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformTests.swift; sourceTree = "<group>"; };
 		74F7D03D211ACC890046AF7E /* AVCaptureVideoOrientationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureVideoOrientationTests.swift; sourceTree = "<group>"; };
+		86506E84515E6314DC8B9612 /* Pods-WeScanSampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeScanSampleProject.debug.xcconfig"; path = "Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9541C84122155DD3005FBCD3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		97DCF3D0DE526EF97B974190 /* Pods_WeScanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeScanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11C5B9B2046A20C005075FE /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		A11C5CD820495EA1005075FE /* RectangleFeaturesFunnelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleFeaturesFunnelTests.swift; sourceTree = "<group>"; };
 		A11C5CDA20495EC9005075FE /* AVCaptureVideoOrientation+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Utils.swift"; sourceTree = "<group>"; };
@@ -265,6 +275,8 @@
 		C31DD8A220C087D80072D439 /* ZoomGestureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomGestureController.swift; sourceTree = "<group>"; };
 		C3789C9A20CC69AD001B423F /* QuadrilateralViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrilateralViewTests.swift; sourceTree = "<group>"; };
 		C3E2EB8D20B8970800A42E58 /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		C8F6FF5A9B08C1BFFF1F0843 /* Pods-WeScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeScan.release.xcconfig"; path = "Target Support Files/Pods-WeScan/Pods-WeScan.release.xcconfig"; sourceTree = "<group>"; };
+		D946BBEE8528599DBE9B0BCD /* Pods_WeScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C44D3422E247C800E035C0 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		F8C44D3622E24FD800E035C0 /* WeScanSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeScanSettings.swift; sourceTree = "<group>"; };
 		F8C44D3822E253C200E035C0 /* SettingsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUI.swift; sourceTree = "<group>"; };
@@ -276,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D4BD02202C4F4100FCDDEC /* WeScan.framework in Frameworks */,
+				1F8FC22AFDF3A1F1F54C7E9F /* Pods_WeScanSampleProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB3E0A846CE0E69D63D397A /* Pods_WeScan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +306,27 @@
 			files = (
 				74E27858215446C900361812 /* FBSnapshotTestCase.framework in Frameworks */,
 				A1D4BCF6202C4F4100FCDDEC /* WeScan.framework in Frameworks */,
+				02421C7D0336CAFDB1747995 /* Pods_WeScanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2668E110E5BE79ACB338BD9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42E030686ADCF4C3840F0122 /* Pods-WeScan.debug.xcconfig */,
+				C8F6FF5A9B08C1BFFF1F0843 /* Pods-WeScan.release.xcconfig */,
+				86506E84515E6314DC8B9612 /* Pods-WeScanSampleProject.debug.xcconfig */,
+				27ADE8B345C8190E811E011A /* Pods-WeScanSampleProject.release.xcconfig */,
+				0CEB9B3A98E1C152D1117807 /* Pods-WeScanTests.debug.xcconfig */,
+				4172A86CE09D30BB5AF8A826 /* Pods-WeScanTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		74E27849215446C200361812 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +341,9 @@
 		74E27857215446C900361812 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D946BBEE8528599DBE9B0BCD /* Pods_WeScan.framework */,
+				3E741530F11273A254D4BA75 /* Pods_WeScanSampleProject.framework */,
+				97DCF3D0DE526EF97B974190 /* Pods_WeScanTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,6 +386,7 @@
 				A1D4BCFB202C4F4100FCDDEC /* WeScanTests */,
 				A1D4BCB8202C4F3800FCDDEC /* Products */,
 				74E27857215446C900361812 /* Frameworks */,
+				2668E110E5BE79ACB338BD9F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -566,10 +599,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1D4BCDF202C4F3800FCDDEC /* Build configuration list for PBXNativeTarget "WeScanSampleProject" */;
 			buildPhases = (
+				E2C2308CD576C202D1AA1FFD /* [CP] Check Pods Manifest.lock */,
 				A1D4BCB3202C4F3800FCDDEC /* Sources */,
 				A1D4BCB4202C4F3800FCDDEC /* Frameworks */,
 				A1D4BCB5202C4F3800FCDDEC /* Resources */,
 				A1D4BD07202C4F4100FCDDEC /* Embed Frameworks */,
+				4B09D0B297D8CA2137B60E99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -585,6 +620,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1D4BD04202C4F4100FCDDEC /* Build configuration list for PBXNativeTarget "WeScan" */;
 			buildPhases = (
+				710C9C30DA09352A86451783 /* [CP] Check Pods Manifest.lock */,
 				A1D4BCE8202C4F4100FCDDEC /* Sources */,
 				A1D4BCE9202C4F4100FCDDEC /* Frameworks */,
 				A1D4BCEA202C4F4100FCDDEC /* Headers */,
@@ -603,6 +639,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1D4BD08202C4F4100FCDDEC /* Build configuration list for PBXNativeTarget "WeScanTests" */;
 			buildPhases = (
+				45B83ED4AED0212DF85F6C91 /* [CP] Check Pods Manifest.lock */,
 				A1D4BCF1202C4F4100FCDDEC /* Sources */,
 				A1D4BCF2202C4F4100FCDDEC /* Frameworks */,
 				A1D4BCF3202C4F4100FCDDEC /* Resources */,
@@ -784,6 +821,93 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B83ED4AED0212DF85F6C91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeScanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B09D0B297D8CA2137B60E99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Pickle/Pickle.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pickle.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeScanSampleProject/Pods-WeScanSampleProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		710C9C30DA09352A86451783 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeScan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2C2308CD576C202D1AA1FFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeScanSampleProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1D4BCB3202C4F3800FCDDEC /* Sources */ = {
@@ -1030,6 +1154,7 @@
 		};
 		A1D4BCE0202C4F3800FCDDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86506E84515E6314DC8B9612 /* Pods-WeScanSampleProject.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1047,6 +1172,7 @@
 		};
 		A1D4BCE1202C4F3800FCDDEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27ADE8B345C8190E811E011A /* Pods-WeScanSampleProject.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1064,6 +1190,7 @@
 		};
 		A1D4BD05202C4F4100FCDDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E030686ADCF4C3840F0122 /* Pods-WeScan.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1091,6 +1218,7 @@
 		};
 		A1D4BD06202C4F4100FCDDEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8F6FF5A9B08C1BFFF1F0843 /* Pods-WeScan.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1117,6 +1245,7 @@
 		};
 		A1D4BD09202C4F4100FCDDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEB9B3A98E1C152D1117807 /* Pods-WeScanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1136,6 +1265,7 @@
 		};
 		A1D4BD0A202C4F4100FCDDEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4172A86CE09D30BB5AF8A826 /* Pods-WeScanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
