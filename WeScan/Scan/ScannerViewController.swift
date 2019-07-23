@@ -449,10 +449,28 @@ extension ScannerViewController: ImagePickerControllerDelegate {
             scale: image.scale,
             orientation: .down
         )
-
-        let editVC = EditScanViewController(image: flippedImage, quad: nil)
         
-        navigationController?.pushViewController(editVC, animated: false)
+        var editVC: EditScanViewController?
+        
+        guard let ciImage = flippedImage.ciImage else {
+            return picker.dismiss(animated: true)
+        }
+        
+        if #available(iOS 11.0, *) {
+            VisionRectangleDetector.rectangle(forImage: ciImage) { (rectangle) in
+                editVC = EditScanViewController(image: flippedImage, quad: rectangle)
+            }
+        } else {
+            CIRectangleDetector.rectangle(forImage: ciImage) { (rectangle) in
+                editVC = EditScanViewController(image: flippedImage, quad: rectangle)
+            }
+        }
+        
+        guard let editScanVC = editVC else {
+            return picker.dismiss(animated: true)
+        }
+
+        navigationController?.pushViewController(editScanVC, animated: false)
     }
     
     private func getThumbnail(_ asset: PHAsset, _ size: CGSize = CGSize(width: 100, height: 100)) -> UIImage? {
